@@ -1,0 +1,26 @@
+#app_1.53
+import numpy as np
+#arreglo NumPy
+A = np.array([[1, 2, 3], [4, 5, 6]])
+print("A: \n",A)
+# Computar las suma de todos lo elementos
+total = np.sum(A)
+print("Suma de todos los elementos de A:", total)
+# Computar la suma a lo largo de las filas, axis 0 (rows)
+filas_sum = np.sum(A, axis=0)
+print("Suma de los elementos a lo largo de las filas 0 (filas) de A:", filas_sum)
+# Coputar la suma a lo largo de las columnas axis, 1 (columns)
+columnas_sum = np.sum(A, axis=1)
+print("Suma de los elementos a lo largo de las columnas 1 (filas) de A:", columnas_sum)
+# Computar el mínimo a lo largo de las filas, axis 0 (rows)
+filas_min = np.min(A, axis=0)
+print("Mínimo a lo largo de las filas de A (axis = 0):", filas_min)
+# Computar el minimo a lo largo de las columnas, axis 1 (columns)
+columnas_min = np.min(A, axis=1)
+print("Mínimo a lo largo de las columnas A (axis = 1):", columnas_min)
+# Computar el máximo a lo largo de las filas, axis 0 (rows)
+filas_max = np.max(A, axis=0)
+print("Máximo a lo largo de las filas de A (axis = 0):", filas_max)
+# Computar el máximo a lo largo de las columnas, axis 1 (columns)
+columnas_max = np.max(A, axis=1)
+print("Máximo a lo largo de las columnas de A (axis =1 ):", columnas_max)
